@@ -1,0 +1,69 @@
+.gfield {
+	margin-bottom: 10px;
+}
+
+.gform_wrapper {
+	.top_label {
+		.gfield_label {
+			display: block;
+			padding-right: 20px;
+			margin: 5px 0px 4px !important;
+		}
+	}
+
+	input {
+		padding: 7px 3px !important;
+		&.button {
+			padding: 5px 10px 6px !important;
+		}
+	}
+
+	.ginput_complex,
+	.gfield_time_hour,
+	.gfield_time_minute,
+	.gfield_date_month,
+	.gfield_date_day,
+	.gfield_date_year {
+		label {
+			letter-spacing: 0px;
+		}
+	}
+
+	.instruction {
+		letter-spacing: 0px;
+	}
+
+	.top_label {
+		input.large,
+		select.large,
+		textarea.textarea {
+			width: 400px !important;
+			padding: 7px 3px !important;
+		}
+	}
+
+	.entry img,
+	img.thumbnail {
+		padding: 0px !important;
+		border: 0px !important;
+	}
+
+	.gfield_checkbox,
+	.gfield_radio {
+		margin-left: 10px !important;
+	}
+
+}
+
+ul {
+	.top_label {
+		.clear-multi {
+			clear: none !important;
+		}
+	}
+}
+
+img.ui-datepicker-trigger {
+	border: 0px;
+	padding: 0px;
+}

@@ -1,0 +1,187 @@
+
+/* 6.1 Buttons */
+a.button,
+a.comment-reply-link,
+#commentform #submit,
+.submit,
+input[type=submit],
+input.button,
+button.button,
+#wrapper .woo-sc-button {
+	display: inline-block;
+	padding: .327em 1em;
+	color: white !important;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+	font-size: 1em; /* Make inputs the same size as normal text */
+	font-family: inherit; /* Make inputs use the correct typeface instead of the browser default */
+	cursor: pointer; /* Inputs need pointers! */
+	overflow: visible; /* IE fix */
+	width: auto; /* IE fix */
+	line-height: 1.618em;
+	@include box-sizing( border-box );
+	white-space: nowrap;
+	background: $color_links;
+	font-weight: 200;
+	text-transform: uppercase;
+	@include box_shadow( 0, 0, 0, 0 );
+	border-radius: 3px;
+	text-shadow: none;
+	-webkit-appearance: caret; /* Remove input shadowing on iOS */
+	-moz-appearance: caret; /* mobile firefox too! */
+
+	&:hover {
+		text-decoration: none;
+		background: darken( $color_links, 20% );
+	}
+
+	&:active {
+		border-color: $color_links - #555;
+		@include inset_box_shadow( 0, 0, 7px, 0, rgba( 0, 0, 0, 0.3 ) );
+	}
+
+	&.small {
+		font-size: .6em;
+		letter-spacing: 1px;
+	}
+
+	&.large {
+		font-size: 1.4em;
+	}
+
+	&.xl {
+		font-size: 2em;
+	}
+
+	&.red {
+		border-color: #af4040;
+		background: #d72323;
+
+		&:hover {
+	    	background: #d20000;
+		}
+	}
+
+	&.orange {
+	    border-color: #af7440;
+	    background: #d76b23;
+
+	    &:hover {
+	 	   background: #d25e00;
+		}
+	}
+
+	&.green {
+	    border-color: #87bf00;
+	    background: #8dc11e;
+
+	    &:hover {
+	 	   background: #87c000;
+		}
+	}
+
+	&.aqua {
+	    border-color: #40af96;
+	    background: #23d7af;
+
+	    &:hover {
+	 	   background: #00d2a8;
+		}
+	}
+
+	&.teal {
+	    border-color: #23a6d6;
+	    background: #23abd7;
+
+	    &:hover {
+	 	   background: #009ed2;
+		}
+	}
+
+	&.purple {
+	    border-color: #234dd6;
+	    background: #2356d7;
+
+	    &:hover {
+	 	   background: #0036d2;
+		}
+	}
+
+	&.pink {
+	    border-color: #d623cb;
+	    background: #d723d5;
+
+	    &:hover {
+	 	   background: #bc00d2;
+		}
+	}
+
+	&.silver {
+	    color: #444 !important;
+	    text-shadow: 0 1px #fff;
+	    border-color: #bbb;
+	    background: #d8d8d8;
+
+	    &:hover {
+		    background: #ccc;
+		}
+	}
+
+	.woo-alert {
+		background: none;
+		padding-left: 0;
+
+		&:before  {
+			@include iconbefore( "\f071" );
+		}
+	}
+
+	.woo-download {
+		background: none;
+		padding-left: 0;
+
+		&:before  {
+			@include iconbefore( "\f01a" );
+		}
+	}
+
+	.woo-tick {
+		background: none;
+		padding-left: 0;
+
+		&:before  {
+			@include iconbefore( "\f058" );
+		}
+	}
+
+	.woo-info {
+		background: none;
+		padding-left: 0;
+
+		&:before {
+			@include iconbefore( "\f05a" );
+		}
+	}
+
+	.woo-note {
+		background: none;
+		padding-left: 0;
+
+		&:before {
+			@include iconbefore( "\f016" );
+		}
+	}
+}
+
+.ie8 {
+	.button {
+		padding: 10px 15px;
+		margin: 0;
+
+		&:visited {
+			padding: 10px 15px;
+			margin: 0;
+		}
+	}
+}
