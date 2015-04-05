@@ -36,7 +36,13 @@ get_header();
             </section><!-- /#main -->
             <?php woo_main_after(); ?>
     
-            <?php get_sidebar(); ?>
+            <?php
+			if(is_front_page()){
+				get_sidebar(); 
+			}else{
+				get_sidebar('warlei');
+			}
+			?>
 
 		</div><!-- /#main-sidebar-container -->         
 

@@ -44,7 +44,7 @@ if ( ! function_exists( 'woo_sensei_content_wrap_end' ) ) {
 	 */
 	function woo_sensei_content_wrap_end() {
 		echo '</section>';
-		get_sidebar();
+		get_sidebar('warlei');
 	}
 }
 

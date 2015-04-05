@@ -66,7 +66,7 @@ $post_settings = woo_portfolio_item_settings( $post->ID );
             </section><!-- /#main -->
             <?php woo_main_after(); ?>
     
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('warlei'); ?>
 
 		</div><!-- /#main-sidebar-container -->         
 
