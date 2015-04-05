@@ -41,7 +41,7 @@ $page_template = woo_get_page_template();
             </section><!-- /#main -->
             <?php woo_main_after(); ?>
 
-			<?php get_sidebar(); ?>
+			<?php get_sidebar('warlei'); ?>
 
 		</div><!-- /#main-sidebar-container -->
 

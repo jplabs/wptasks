@@ -11,6 +11,7 @@ if ( ! function_exists( 'woothemes_add_javascript' ) ) {
 		wp_register_script( 'flexslider', get_template_directory_uri() . '/includes/js/jquery.flexslider.min.js', array( 'jquery' ) );
 		wp_register_script( 'prettyPhoto', get_template_directory_uri() . '/includes/js/jquery.prettyPhoto.js', array( 'jquery' ) );
 		wp_register_script( 'portfolio', get_template_directory_uri() . '/includes/js/portfolio.js', array( 'jquery', 'prettyPhoto' ) );
+		wp_enqueue_script( 'portfolio', get_template_directory_uri() . '/includes/js/portfolio.js', array( 'jquery', 'prettyPhoto' ) );
 		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/includes/js/modernizr.js', array( 'jquery' ), '2.6.2' );
 
 		// Conditionally load the Slider and Portfolio JavaScript, where needed.

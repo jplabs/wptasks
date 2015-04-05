@@ -49,7 +49,7 @@
             </section><!-- /#main -->
             <?php woo_main_after(); ?>
 
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('warlei'); ?>
 
 		</div><!-- /#main-sidebar-container -->
 
