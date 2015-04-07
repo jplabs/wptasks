@@ -28,7 +28,11 @@ if ( 'one-col' != $layout ) {
 <aside id="sidebar">
 <?php
 	woo_sidebar_inside_before();
-	woo_sidebar( 'primary' );
+        if(is_front_page()){
+            woo_sidebar( 'primary' );
+        }else{
+            woo_sidebar( 'custom' );
+        }
 	woo_sidebar_inside_after();
 ?>
 </aside><!-- /#sidebar -->
